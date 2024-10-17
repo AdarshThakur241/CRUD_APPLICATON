@@ -1,0 +1,129 @@
+
+.userTable {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .addButton {
+    
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 50%;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .addButton:hover {
+    background-color: #218838;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    background-color: white;
+  }
+  
+  th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f1f1f1;
+  }
+  
+  td {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .actionButtons button, .actionButtons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #007bff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .actionButtons button:hover, .actionButtons a:hover {
+    background-color: #f1f1f1;
+    border-color: #007bff;
+  }
+  
+  .actionButtons button i, .actionButtons a i {
+    color: #007bff;
+    font-size: 18px;
+  }
+  
+  .actionButtons button:hover i, .actionButtons a:hover i {
+    color: #0056b3;
+  }
+  
+  
+  .fa-trash, .fa-pen-to-square {
+    font-size: 18px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .userTable {
+      padding: 15px;
+    }
+  
+    th, td {
+      padding: 10px;
+      font-size: 12px;
+    }
+  
+    .addButton {
+      font-size: 14px;
+    }
+  
+    .actionButtons button, .actionButtons a {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .userTable {
+      padding: 10px;
+    }
+  
+    th, td {
+      padding: 8px;
+      font-size: 10px;
+    }
+  
+    .addButton {
+      padding: 8px;
+      font-size: 12px;
+    }
+  
+    .actionButtons {
+      flex-direction: column;
+      gap: 5px;
+    }
+  
+    .actionButtons button, .actionButtons a {
+      font-size: 14px;
+    }
+  }
+  
